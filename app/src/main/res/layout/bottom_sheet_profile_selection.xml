@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_top_corner_white_bg"
+    android:paddingTop="32dp"
+    android:paddingBottom="40dp"   tools:context=".ProfileSelectionBottomSheet">
+
+    <TextView
+        android:id="@+id/name_text_selection_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_lengkap"
+        android:textColor="@android:color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/position_text_selection_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/posisi"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="16sp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/name_text_selection_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/social_media_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/position_text_selection_white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <ImageView
+            android:id="@+id/icon_linkedin"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_linkedin"
+            android:tint="@android:color/black"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="LinkedIn" />
+
+        <ImageView
+            android:id="@+id/icon_github"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_github"
+            android:tint="@android:color/black"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="GitHub" />
+
+        <ImageView
+            android:id="@+id/icon_instagram"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_instagram"
+            android:tint="@android:color/black"
+            android:layout_marginEnd="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Instagram" />
+
+        <ImageView
+            android:id="@+id/icon_twitter"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:src="@drawable/ic_twitter"
+            android:tint="@android:color/black"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="Twitter" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view_categories_white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/social_media_layout"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="3"
+        tools:listitem="@layout/item_category" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

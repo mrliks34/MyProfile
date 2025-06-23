@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?> <LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner_card_bg"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deskripsi Aktivitas:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_activity_desc" android:contentDescription="Icon Deskripsi"/>
+            <TextView
+                android:id="@+id/aktivitas_deskripsi_text"
+                style="@style/AktivitasValue"
+                android:justificationMode="inter_word"
+                tools:text="Teks deskripsi aktivitas Anda." />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jadwal Harian Detail:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja05_15" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja06_00" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja06_30" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja07_00" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja08_00" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja12_00" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja12_30" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja15_30" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja15_45" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja16_45" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja17_30" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja18_00" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja18_20" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja21_40" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja21_40_2" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja23_00" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja23_15" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja23_15_2" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja23_30" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/AktivitasItemContainer">
+            <ImageView style="@style/AktivitasIcon" android:src="@drawable/ic_access_time" android:contentDescription="Waktu"/>
+            <TextView style="@style/AktivitasValue" android:id="@+id/jadwal_jam_kerja02_00" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

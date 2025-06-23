@@ -1,0 +1,48 @@
+<resources>
+    <string name="app_name">My Personal Profile</string>
+
+    <string name="biodata_title">Biodata &amp; CV</string>
+    <string name="nama_lengkap">Abdul Malik Hidayatullah</string>
+    <string name="posisi">Mahasiswa Biasa</string>
+    <string name="alamat">Kp. Pangodokan Kidul RT04/RW03, Kel. Kutabumi, Kec. Pasarkemis, Kab. Tangerang, Banten</string>
+    <string name="email">am6064577@gmail.com</string>
+    <string name="telepon">+62 859106621348</string>
+    <string name="tentang_saya">Saya adalah seorang mahasiswa ilmu komputer di Universitas Yatsi Madani, saya memiliki minat di bidang komputer seperti pengembangan aplikasi dan desain antarmuka pengguna, troubleshooting jaringan internet, dan database .</string>
+
+    <string name="pendidikan_title">Pendidikan</string>
+    <string name="sd_nama">SD Negeri Kutabumi 2</string>
+    <string name="sd_tahun">2007 - 2013</string>
+    <string name="smp_nama">SMP Negeri 3 Pasarkemis</string>
+    <string name="smp_tahun">2013 - 2016</string>
+    <string name="sma_nama">SMA Negeri 2 Kabupaten Tangerang</string>
+    <string name="sma_tahun">2016 - 2019</string>
+    <string name="kuliah_nama">Universitas Yatsi Madani</string>
+    <string name="kuliah_jurusan">Ilmu Komputer</string>
+    <string name="kuliah_tahun">2023 - sekarang</string>
+
+    <string name="aktivitas_title">Aktivitas Harian</string>
+    <string name="aktivitas_deskripsi">Keseharian saya diisi dengan kombinasi antara tanggung jawab pribadi dan akademik. Setiap hari, saya aktif membantu orang tua di rumah dan memastikan rumah tetap rapi. Di tengah kesibukan itu, saya selalu meluangkan waktu untuk mengerjakan tugas-tugas kuliah dan memperdalam materi perkuliahan. Sholat menjadi bagian rutin yang tak terpisahkan dari hari saya, memberikan ketenangan di sela-sela aktivitas. Untuk menjaga keseimbangan, saya juga rutin melakukan workout atau olahraga. Malam hari diakhiri dengan istirahat yang cukup untuk mengembalikan energi.</string>
+    <string name="jam_kerja">05:00 - 05:15 Bangun Pagi dan Sholat Subuh.</string>
+    <string name="jam_kerja05_15">05:15 - 06:00 Olahrga/Workout (kalau niat).</string>
+    <string name="jam_kerja06_00">06:00 - 06:30 Selesai Olahraga/Workout (Pendinginan).</string>
+    <string name="jam_kerja06_30">06:30 - 07:00 Mengantar Orang Tua Ke Sekolah (Guru).</string>
+    <string name="jam_kerja07_00">07:00 - 08:00 Ngopi Nyantai Sejenak.</string>
+    <string name="jam_kerja08_00">08:00 - 12:00 Membantu Pekerjaan Rumah dan Kuliah.</string>
+    <string name="jam_kerja12_00">12:00 - 12:30 Mandi dan Sholat Dzuhur.</string>
+    <string name="jam_kerja12_30">12:30 - 15:30 Mengerjakan tugas Kuliah dan Belajar.</string>
+    <string name="jam_kerja15_30">15:30 - 15:45 Sholat Ashar.</string>
+    <string name="jam_kerja15_45">15:45 - 16:45 Membersihkan Rumah (Ngepel,Nyapu, dan Menyiram Tanaman.</string>
+    <string name="jam_kerja16_45">16:45 - 17:30 Mandi Sore dan Prepare Untuk kuliah.</string>
+    <string name="jam_kerja17_30">17:30 Berangkat Kuliah.</string>
+    <string name="jam_kerja18_00">18:00 - 18:10 Sampai di Kampus dan Sholat Maghrib.</string>
+    <string name="jam_kerja18_20">18:20 Mulai Kuliah.</string>
+    <string name="jam_kerja21_40">21:40 Selesai Kuliah.</string>
+    <string name="jam_kerja21_40_2">21:40 - 23:00 Nongkrong (Menyesuaikan Keadaan).</string>
+    <string name="jam_kerja23_00">23:00 Pulang.</string>
+    <string name="jam_kerja23_15">23:15 Sampai Rumah.</string>
+    <string name="jam_kerja23_15_2">23:15 - 23:30 Bersihkan Wajah dan Sholat Isya.</string>
+    <string name="jam_kerja23_30">23:30 - 02:00 Mengerjakan Tugas atau Bermain Game.</string>
+    <string name="jam_kerja02_00">02:00 - 05:00 Tidur (Opsional).</string>
+
+
+</resources>

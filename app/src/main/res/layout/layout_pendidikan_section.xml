@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_corner_card_bg"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jenjang Pendidikan:"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout style="@style/PendidikanItemContainer">
+            <ImageView style="@style/PendidikanIcon" android:src="@drawable/ic_school_primary" android:contentDescription="Icon SD"/>
+            <LinearLayout style="@style/PendidikanTextContainer">
+                <TextView style="@style/PendidikanLabel" android:text="Sekolah Dasar:"/>
+                <TextView style="@style/PendidikanValue" android:id="@+id/pendidikan_sd_nama" />
+                <TextView style="@style/PendidikanValueSmall" android:id="@+id/pendidikan_sd_tahun" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/PendidikanItemContainer">
+            <ImageView style="@style/PendidikanIcon" android:src="@drawable/ic_school_middle" android:contentDescription="Icon SMP"/>
+            <LinearLayout style="@style/PendidikanTextContainer">
+                <TextView style="@style/PendidikanLabel" android:text="SMP:"/>
+                <TextView style="@style/PendidikanValue" android:id="@+id/pendidikan_smp_nama" />
+                <TextView style="@style/PendidikanValueSmall" android:id="@+id/pendidikan_smp_tahun" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/PendidikanItemContainer">
+            <ImageView style="@style/PendidikanIcon" android:src="@drawable/ic_school_high" android:contentDescription="Icon SMA"/>
+            <LinearLayout style="@style/PendidikanTextContainer">
+                <TextView style="@style/PendidikanLabel" android:text="SMA:"/>
+                <TextView style="@style/PendidikanValue" android:id="@+id/pendidikan_sma_nama" />
+                <TextView style="@style/PendidikanValueSmall" android:id="@+id/pendidikan_sma_tahun" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/PendidikanItemContainer">
+            <ImageView style="@style/PendidikanIcon" android:src="@drawable/ic_university" android:contentDescription="Icon Universitas"/>
+            <LinearLayout style="@style/PendidikanTextContainer">
+                <TextView style="@style/PendidikanLabel" android:text="Perguruan Tinggi:"/>
+                <TextView style="@style/PendidikanValue" android:id="@+id/pendidikan_kuliah_nama" />
+                <TextView style="@style/PendidikanValueSmall" android:id="@+id/pendidikan_kuliah_jurusan" />
+                <TextView style="@style/PendidikanValueSmall" android:id="@+id/pendidikan_kuliah_tahun" />
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
