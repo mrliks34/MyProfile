@@ -10,7 +10,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import androidx.appcompat.app.AppCompatActivity; // Penting: Pastikan ini ada
+import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 
@@ -44,11 +44,9 @@ public class CategoryAdapter extends RecyclerView.Adapter<CategoryAdapter.Catego
                 Intent intent = new Intent(context, ProfileDetailActivity.class);
                 intent.putExtra("detail_type", category.getDetailType());
 
-                // Pastikan context adalah instance Activity sebelum memulai
                 if (context instanceof AppCompatActivity) {
                     ((AppCompatActivity) context).startActivity(intent);
                 } else {
-                    // Fallback jika bukan Activity context (seharusnya tidak terjadi jika BottomSheetFragment benar)
                     context.startActivity(intent);
                 }
             }

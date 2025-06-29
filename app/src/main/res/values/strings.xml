@@ -3,11 +3,13 @@
 
     <string name="biodata_title">Biodata &amp; CV</string>
     <string name="nama_lengkap">Abdul Malik Hidayatullah</string>
+    <string name="nim">23050904</string>
     <string name="posisi">Mahasiswa Biasa</string>
     <string name="alamat">Kp. Pangodokan Kidul RT04/RW03, Kel. Kutabumi, Kec. Pasarkemis, Kab. Tangerang, Banten</string>
     <string name="email">am6064577@gmail.com</string>
     <string name="telepon">+62 859106621348</string>
     <string name="tentang_saya">Saya adalah seorang mahasiswa ilmu komputer di Universitas Yatsi Madani, saya memiliki minat di bidang komputer seperti pengembangan aplikasi dan desain antarmuka pengguna, troubleshooting jaringan internet, dan database .</string>
+
 
     <string name="pendidikan_title">Pendidikan</string>
     <string name="sd_nama">SD Negeri Kutabumi 2</string>
@@ -43,6 +45,15 @@
     <string name="jam_kerja23_15_2">23:15 - 23:30 Bersihkan Wajah dan Sholat Isya.</string>
     <string name="jam_kerja23_30">23:30 - 02:00 Mengerjakan Tugas atau Bermain Game.</string>
     <string name="jam_kerja02_00">02:00 - 05:00 Tidur (Opsional).</string>
+
+    <string name="skills_title">Keahlian Saya</string>
+    <string name="skills_web_dev_frontend">Pengembangan Web Front End (HTML, CSS, dan PHP)</string>
+    <string name="skills_mobile_dev_android">Pengembangan Aplikasi Mobile (Kotlin, Java)</string>
+    <string name="skills_admin">Mengetik dengan cepat, Mengedit Dookumen &amp; Menguasai MS Excel</string>
+    <string name="skills_database">Menguasai MYSQL</string>
+    <string name="skills_problem_solving">Pemecahan Masalah</string>
+    <string name="skills_teamwork">Kerja Tim &amp;, Kolaborasi</string>
+    <string name="skills_fast_learner">Pembelajar Cepat/Mudah Beradaptasi</string>
 
 
 </resources>

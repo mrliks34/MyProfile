@@ -36,47 +36,48 @@ public class ProfileSelectionBottomSheet extends BottomSheetDialogFragment {
         // Inisialisasi RecyclerView dan Adapternya
         RecyclerView recyclerView = view.findViewById(R.id.recycler_view_categories_white);
         recyclerView.setHasFixedSize(true);
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 3));
+        recyclerView.setLayoutManager(new GridLayoutManager(getContext(), 2));
 
         List<Category> categories = new ArrayList<>();
         categories.add(new Category(getString(R.string.biodata_title), R.drawable.ic_biodata, "biodata"));
         categories.add(new Category(getString(R.string.pendidikan_title), R.drawable.ic_education, "pendidikan"));
         categories.add(new Category(getString(R.string.aktivitas_title), R.drawable.ic_activity, "aktivitas"));
+        categories.add(new Category(getString(R.string.skills_title), R.drawable.ic_skills, "skill"));
 
         CategoryAdapter adapter = new CategoryAdapter(getContext(), categories);
         recyclerView.setAdapter(adapter);
 
         // Inisialisasi ImageView untuk media sosial dan set OnClickListener
-        ImageView iconLinkedin = view.findViewById(R.id.icon_linkedin);
+        ImageView iconFacebook = view.findViewById(R.id.icon_facebook);
         ImageView iconGithub = view.findViewById(R.id.icon_github);
         ImageView iconInstagram = view.findViewById(R.id.icon_instagram);
         ImageView iconTwitter = view.findViewById(R.id.icon_twitter);
 
-        iconLinkedin.setOnClickListener(new View.OnClickListener() {
+        iconFacebook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openSocialMediaLink("https://www.linkedin.com/in/yaronfanger");
+                openSocialMediaLink("https://www.facebook.com/share/1B9aQCf9Bu/");
             }
         });
 
         iconGithub.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openSocialMediaLink("https://github.com/yaronfanger");
+                openSocialMediaLink("https://github.com/mrliks34");
             }
         });
 
         iconInstagram.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openSocialMediaLink("https://www.instagram.com/yaronfanger_ig");
+                openSocialMediaLink("https://www.instagram.com/malik.hdytllh?igsh=YzVidGhzMWExdDIy");
             }
         });
 
         iconTwitter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                openSocialMediaLink("https://twitter.com/yaronfanger_x");
+                openSocialMediaLink("https://x.com/mrliks534?s=09");
             }
         });
 

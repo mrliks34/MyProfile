@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:ignore="ContentDescription">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_themed_card"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kemampuan Teknis:"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout style="@style/SkillsItemContainer">
+            <ImageView style="@style/SkillsIcon" android:src="@drawable/ic_front_end" android:contentDescription="Icon Skill"/>
+            <TextView style="@style/SkillsValue" android:id="@+id/skills_web_dev_frontend" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/SkillsItemContainer">
+            <ImageView style="@style/SkillsIcon" android:src="@drawable/ic_mobile_dev" android:contentDescription="Icon Skill"/>
+            <TextView style="@style/SkillsValue" android:id="@+id/skills_mobile_dev_android" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/SkillsItemContainer">
+            <ImageView style="@style/SkillsIcon" android:src="@drawable/ic_admin" android:contentDescription="Icon Skill"/>
+            <TextView style="@style/SkillsValue" android:id="@+id/skills_admin"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/SkillsItemContainer">
+            <ImageView style="@style/SkillsIcon" android:src="@drawable/ic_database" android:contentDescription="Icon Skill"/>
+            <TextView style="@style/SkillsValue" android:id="@+id/skills_database" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginVertical="4dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Kemampuan Non-Teknis:"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp" />
+
+        <LinearLayout style="@style/SkillsItemContainer">
+            <ImageView style="@style/SkillsIcon" android:src="@drawable/ic_problem_solving" android:contentDescription="Icon Skill"/>
+            <TextView style="@style/SkillsValue" android:id="@+id/skills_problem_solving" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/SkillsItemContainer">
+            <ImageView style="@style/SkillsIcon" android:src="@drawable/ic_teamwork" android:contentDescription="Icon Skill"/>
+            <TextView style="@style/SkillsValue" android:id="@+id/skills_teamwork" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/SkillsItemContainer">
+            <ImageView style="@style/SkillsIcon" android:src="@drawable/ic_fast_learner" android:contentDescription="Icon Skill"/>
+            <TextView style="@style/SkillsValue" android:id="@+id/skills_fast_learner" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

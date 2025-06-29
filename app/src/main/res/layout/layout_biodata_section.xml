@@ -21,7 +21,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="@drawable/rounded_corner_card_bg"
+        android:background="@drawable/bg_themed_card"
         android:padding="16dp"
         android:layout_marginBottom="16dp">
 
@@ -30,53 +30,67 @@
             <TextView style="@style/BiodataLabel" android:text="Nama:"/>
             <TextView style="@style/BiodataValue" android:id="@+id/biodata_nama_lengkap" />
         </LinearLayout>
-        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginVertical="4dp"/>
 
         <LinearLayout style="@style/BiodataItemContainer">
             <ImageView style="@style/BiodataIcon" android:src="@drawable/ic_work_briefcase" android:contentDescription="Icon Posisi"/>
             <TextView style="@style/BiodataLabel" android:text="Posisi:"/>
             <TextView style="@style/BiodataValue" android:id="@+id/biodata_posisi" />
         </LinearLayout>
-        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginVertical="4dp"/>
+
+        <LinearLayout style="@style/BiodataItemContainer">
+            <ImageView style="@style/BiodataIcon" android:src="@drawable/ic_nim" android:contentDescription="Icon NIM"/>
+            <TextView style="@style/BiodataLabel" android:text="NIM:"/>
+            <TextView style="@style/BiodataValue" android:id="@+id/biodata_nim" />
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginVertical="4dp"/>
 
         <LinearLayout style="@style/BiodataItemContainer">
             <ImageView style="@style/BiodataIcon" android:src="@drawable/ic_location" android:contentDescription="Icon Alamat"/>
             <TextView style="@style/BiodataLabel" android:text="Alamat:"/>
             <TextView style="@style/BiodataValue" android:id="@+id/biodata_alamat" />
         </LinearLayout>
-        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginVertical="4dp"/>
 
         <LinearLayout style="@style/BiodataItemContainer">
             <ImageView style="@style/BiodataIcon" android:src="@drawable/ic_email" android:contentDescription="Icon Email"/>
             <TextView style="@style/BiodataLabel" android:text="Email:"/>
-            <TextView style="@style/BiodataValue" android:id="@+id/biodata_email" />
+            <TextView style="@style/BiodataValue" android:id="@+id/biodata_email"
+                android:autoLink="email"
+                android:clickable="true"/>
         </LinearLayout>
-        <View android:layout_width="match_parent" android:layout_height="2dp" android:background="#E0E0E0" android:layout_marginVertical="4dp"/>
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginVertical="4dp"/>
 
         <LinearLayout style="@style/BiodataItemContainer">
             <ImageView style="@style/BiodataIcon" android:src="@drawable/ic_phone" android:contentDescription="Icon Telepon"/>
             <TextView style="@style/BiodataLabel" android:text="Telepon:"/>
-            <TextView style="@style/BiodataValue" android:id="@+id/biodata_telepon" />
+            <TextView style="@style/BiodataValue" android:id="@+id/biodata_telepon"
+                android:clickable="true"
+                android:focusable="true"
+                android:autoLink="phone"
+                tools:text="+62 859 1066 21348"/>
         </LinearLayout>
 
+        <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginTop="16dp" android:layout_marginBottom="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tentang Saya:"
+            android:textColor="?attr/colorOnSurface"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp" />
+        <TextView
+            android:id="@+id/biodata_tentang_saya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="?attr/colorOnSurface"
+            android:lineSpacingExtra="4dp"
+            android:justificationMode="inter_word"
+            tools:text="Deskripsi tentang diri saya..." />
+
     </LinearLayout>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Tentang Saya:"
-        android:textColor="@android:color/black"
-        android:textSize="16sp"
-        android:textStyle="bold"
-        android:layout_marginBottom="8dp" />
-    <TextView
-        android:id="@+id/biodata_tentang_saya"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="16sp"
-        android:textColor="@android:color/black"
-        android:lineSpacingExtra="4dp"
-        android:justificationMode="inter_word"
-        tools:text="Deskripsi tentang diri saya..." />
-
 </LinearLayout>

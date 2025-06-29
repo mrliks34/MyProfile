@@ -5,60 +5,93 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@android:color/white"
+    android:background="?attr/colorSurface"
     tools:context=".ProfileDetailActivity">
 
-    <LinearLayout
-        android:id="@+id/detail_content_container"
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="16dp">
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/theme_icon_detail"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="36dp"
+            android:clickable="true"
+            android:contentDescription="Toggle Dark Mode"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?attr/colorOnSurface"
+            tools:src="@drawable/ic_sun" />
 
         <ImageView
             android:id="@+id/icon_back_detail"
             android:layout_width="32dp"
             android:layout_height="32dp"
-            android:src="@drawable/ic_arrow_back"
-            android:tint="@android:color/black"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
             android:clickable="true"
-            android:focusable="true"
             android:contentDescription="Kembali"
-            android:layout_marginBottom="16dp"
-            android:layout_marginStart="8dp"
-            android:layout_marginTop="16dp"/>
+            android:focusable="true"
+            android:src="@drawable/ic_arrow_back"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="?attr/colorOnSurface" />
 
-        <TextView
-            android:id="@+id/detail_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textSize="28sp"
-            android:textColor="@android:color/black"
-            android:layout_marginBottom="16dp"
-            android:layout_gravity="center_horizontal"
-            tools:text="Judul Bagian" />
-
-        <include
-            android:id="@+id/included_biodata_section"
-            layout="@layout/layout_biodata_section"
+        <LinearLayout
+            android:id="@+id/detail_content_container"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:visibility="gone"/>
+            android:orientation="vertical"
+            android:padding="16dp"
+            app:layout_constraintTop_toBottomOf="@+id/icon_back_detail"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
 
-        <include
-            android:id="@+id/included_pendidikan_section"
-            layout="@layout/layout_pendidikan_section"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone"/>
+            <TextView
+                android:id="@+id/detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:textColor="?attr/colorOnSurface"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                tools:text="Judul Bagian" />
 
-        <include
-            android:id="@+id/included_aktivitas_section"
-            layout="@layout/layout_aktivitas_section"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:visibility="gone"/>
+            <include
+                android:id="@+id/included_biodata_section"
+                layout="@layout/layout_biodata_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
 
-    </LinearLayout>
+            <include
+                android:id="@+id/included_pendidikan_section"
+                layout="@layout/layout_pendidikan_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <include
+                android:id="@+id/included_aktivitas_section"
+                layout="@layout/layout_aktivitas_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+            <include
+                android:id="@+id/included_skill_section"
+                layout="@layout/layout_skill_section"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
