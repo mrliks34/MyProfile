@@ -56,11 +56,15 @@
         <LinearLayout style="@style/BiodataItemContainer">
             <ImageView style="@style/BiodataIcon" android:src="@drawable/ic_email" android:contentDescription="Icon Email"/>
             <TextView style="@style/BiodataLabel" android:text="Email:"/>
-            <TextView style="@style/BiodataValue" android:id="@+id/biodata_email"
-                android:autoLink="email"
-                android:clickable="true"/>
+
         </LinearLayout>
         <View android:layout_width="match_parent" android:layout_height="1dp" android:background="@color/color_divider" android:layout_marginVertical="4dp"/>
+
+        <TextView
+            android:id="@+id/biodata_email"
+            style="@style/BiodataValue"
+            android:autoLink="email"
+            android:clickable="true" />
 
         <LinearLayout style="@style/BiodataItemContainer">
             <ImageView style="@style/BiodataIcon" android:src="@drawable/ic_phone" android:contentDescription="Icon Telepon"/>
